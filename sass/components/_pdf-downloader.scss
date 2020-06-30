@@ -1,0 +1,16 @@
+.pdf-sec{
+
+	.title{
+		font-size: 15px;
+	    line-height: 24px;
+	    font-family: $secondary-font;
+	    background: color(primary);
+	    color: color(white);
+	}
+
+	a{
+		@include border-radius(0);
+		width: 100% !important;
+	}
+
+}

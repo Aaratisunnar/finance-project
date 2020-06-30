@@ -1,0 +1,98 @@
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+//service form consultant
+
+.service-detail-page{
+	.form-holder{
+
+		.title{
+			font-size: 15px;
+		    line-height: 24px;
+		    font-family: $secondary-font;
+		    background: color(primary);
+		    color: color(white);
+		}
+
+		.form{
+			
+			.select-title{
+				font-size: 1rem;
+			    line-height: 1.5;
+			    color: #495057;
+			    background-color: #fff;
+			    background-clip: padding-box;
+			    border: 1px solid #ced4da;
+			}
+
+			textarea{
+				height: 100px;
+			}
+
+			.submit{
+				font-size: 15px;
+			    line-height: 24px;
+			    font-weight: 600;
+				color: color(white);
+				cursor: pointer;
+				background: color(primary);
+				border: 0;
+			    font-family: $secondary-font;
+			}
+
+		}//form
+
+	}//holder
+}
+
+// Contact Us form
+
+.contact-page-form{
+
+	.comment-form{
+
+		label{
+			margin-bottom: 20px;
+			width: 100%;
+
+			.label-title{
+				font-size: 15px;
+			    line-height: 24px;
+			    font-weight: 600;
+				color: color(font-dark-color);
+				font-family: $secondary-font;
+
+				.far{
+					color: color(primary);
+				}
+			}
+
+			.input{
+				@include border-radius(50px);
+				border: 1px solid color(section-bg);
+				font-size: 15px;
+				line-height: 20px;
+			}
+
+			textarea{
+				@include border-radius(30px !important);
+			}
+
+			textarea:focus, input:focus{
+			    outline: none;
+			}
+
+		}//label
+
+		.submit{
+			background: #21c87a;
+		    color: #fff;
+		    border: 0;
+		    padding: 15px 24px;
+		    border-radius: 50px;
+		    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.4);
+		    cursor: pointer;
+		}
+
+	}//form
+}

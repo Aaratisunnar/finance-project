@@ -1,0 +1,40 @@
+@mixin animation($animation, $duration, $delay, $count){  
+	-webkit-animation-name: $animation;				
+	-moz-animation-name: $animation;
+	-o-animation-name: $animation;
+	animation-name: $animation;					//Always write the orginal property at first
+	animation-duration: $duration;				
+	animation-delay: $delay;
+    animation-iteration-count: $count;
+}
+
+@mixin keyframes ($name){
+	@-webkit-keyframes #{$name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+
+    @keyframes #{$name} {
+        @content;
+    }
+}                  
+
+@keyframes animate{
+  0%{
+    box-shadow: 0 0 0 0 rgba(238, 141, 14, 1),  0 0 0 0 rgba(238, 141, 14, 1);
+  }
+  40%{
+    box-shadow: 0 0 0 50px rgba(238, 141, 14, 0),  0 0 0 0 rgba(238, 141, 14, 1);
+  }
+  80%{
+    box-shadow: 0 0 0 50px rgba(238, 141, 14,0 ),  0 0 0 30px rgba(238, 141, 14, 0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(238, 141, 14, 0),  0 0 0 30px rgba(238, 141, 14, 0);
+  }
+}
+                    
+       

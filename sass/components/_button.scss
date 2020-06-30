@@ -1,0 +1,68 @@
+.header-btn,
+.banner-btn,
+.about-btn,
+.service-btn,
+.blog-btn{
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: 700;
+	color: color(font-color);
+	@include transition(ease 0.3s);
+	@include border-radius(30px);
+	@include media(mb){
+		font-size: 12px;
+	}
+
+	&:hover{
+		text-decoration: none;
+		color: color(primary);
+	}
+}
+
+.banner-btn,
+.about-btn{
+	background: color(primary);
+	color: color(white);
+	@include border-radius(30px);
+
+	&:hover{
+		color: color(primary);
+		background: #efefef;
+	}
+
+}//btn
+
+.service-btn{
+	background: color(primary);
+	color: color(white);
+	@include border-radius(0);
+
+	&:hover{
+		background: color(secondary);
+	}
+}
+
+.blog-btn{
+	background: color(primary);
+	color: color(white);
+	@include border-radius(30px);
+	left: 24%;
+	@include transform(translateY(-80%));
+	opacity: 0;
+	visibility: hidden;
+	@include media(sm){
+		left: 32%;
+	}
+
+	&:hover{
+		color: color(primary);
+		background: color(secondary);
+	}
+
+	@include media(sm){
+		@include transform(translateY(20%));
+		opacity: 1;
+		visibility: visible;
+	}
+
+}//btn

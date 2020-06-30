@@ -1,0 +1,28 @@
+.modal{
+
+	.modal-content{
+
+		.modal-header{
+			background: color(primary);
+			color: color(white);
+			font-family: $primary-font;
+
+			.close{
+				background: color(white);
+				font-size: 30px;
+				opacity: unset;
+
+			}
+
+		}//header
+		
+		.form-holder{
+
+			textarea{
+				height: 150px;
+			}
+
+		}//form
+		
+	}//content
+}

@@ -1,0 +1,30 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.125em;
+	font-family: $primary-font;
+	color: color(font-color);
+	overflow-x: hidden;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	margin-top: 0;
+}
+
+p{
+	margin-top: 0;
+}

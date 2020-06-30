@@ -1,0 +1,61 @@
+.accordian,
+.table-medical{
+
+  .pre-title{
+    font-size: 20px;
+    line-height: 26px;
+    color: color(primary);
+    font-weight: 600;
+    font-style: italic;
+    font-family: $tertiary-font;
+  }
+
+  .title{
+    font-size: 30px;
+    line-height: 46px;
+    font-family: $secondary-font;
+    color: color(font-dark-color);
+  }
+}
+
+.myaccordion {
+  box-shadow: 0 0 1px rgba(0,0,0,0.1);
+}
+
+.myaccordion .card,
+.myaccordion .card:last-child .card-header {
+  border: none;
+}
+
+.myaccordion .card-header {
+  border-bottom-color: #EDEFF0;
+  background: color(primary);
+}
+.myaccordion .card-body p{
+   font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.myaccordion .fa-stack {
+  font-size: 18px;
+}
+
+.fa-inverse {
+    color: color(primary);
+}
+
+.myaccordion .btn {
+  width: 100%;
+  font-weight: bold;
+  color: color(white);
+  padding: 0;
+}
+
+.myaccordion .btn-link:hover,
+.myaccordion .btn-link:focus {
+  text-decoration: none;
+}
+
+.myaccordion li + li {
+  margin-top: 10px;
+}
